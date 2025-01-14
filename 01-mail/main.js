@@ -10,5 +10,24 @@ let mail = ["valentino.rossi@mail.com",
     "giorgio.cognome@mail.com",
     "fabio.caressa@mail.com",
     "luca.toni@mail.com"
-]
+];
 
+let userMail = prompt("Inserisci di seguito la tua mail personale", "user@mail.com");
+
+let mailCheck = 0;
+
+for (let i = 0; i < mail.length; i++) {
+
+    if (userMail === mail[i]) {
+        mailCheck = 1;
+    } else {
+        
+    }
+
+}
+
+if (mailCheck) {
+    console.log ("Sei nella lista degli invitati, puoi entrare!");
+} else {
+    console.log ("Non sei nella lista degli invitati, non puoi entrare!");
+}
